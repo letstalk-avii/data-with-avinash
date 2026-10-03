@@ -70,7 +70,7 @@ export default function Page() {
         <div className="hero-meta"><span className="live-dot" /> OPEN TO DATA ENGINEERING INTERNSHIPS <span className="meta-rule" /></div>
         <div className="hero-grid">
           <div>
-            <h1>Data<br /><span>has a</span><br />shape.</h1>
+            <h1>Raw data<br /><span>becomes</span><br />momentum.</h1>
             <p className="hero-note"><strong>Avinash Kamble</strong> — Information Technology undergraduate engineering reliable data systems across Azure, Databricks, and Python.</p>
             <div className="hero-actions"><a className="solid-button" href="#work">See selected work <ArrowUpRight size={16} /></a><a className="outline-button" href="mailto:letstalk.avii@gmail.com">Let&apos;s connect <Mail size={16} /></a></div>
           </div>
