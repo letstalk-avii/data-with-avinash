@@ -58,7 +58,7 @@ export default function Page() {
   return (
     <main className="portfolio-shell" id="top">
       <nav className="topbar page-width" aria-label="Main navigation">
-        <a className="wordmark" href="#top" onClick={() => setMenuOpen(false)}><span>AK</span> AVINASH / KAMBLE</a>
+        <a className="wordmark" href="#top" onClick={() => setMenuOpen(false)}><span>AK</span> DATA WITH AVINASH</a>
         <button className="menu-button" aria-label={menuOpen ? 'Close menu' : 'Open menu'} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</button>
         <div className={`nav-menu ${menuOpen ? 'open' : ''}`}>
           {['Work', 'About', 'Stack', 'Contact'].map((item) => <a key={item} href={`#${item.toLowerCase()}`} onClick={() => setMenuOpen(false)}>{item}</a>)}
@@ -71,7 +71,7 @@ export default function Page() {
         <div className="hero-grid">
           <div>
             <h1>Data<br /><span>has a</span><br />shape.</h1>
-            <p className="hero-note">I&apos;m Avinash Kamble, an Information Technology undergraduate engineering reliable data systems across Azure, Databricks, and Python.</p>
+            <p className="hero-note"><strong>Avinash Kamble</strong> — Information Technology undergraduate engineering reliable data systems across Azure, Databricks, and Python.</p>
             <div className="hero-actions"><a className="solid-button" href="#work">See selected work <ArrowUpRight size={16} /></a><a className="outline-button" href="mailto:letstalk.avii@gmail.com">Let&apos;s connect <Mail size={16} /></a></div>
           </div>
           <div className="hero-visual" aria-label="Animated data system visualization">
