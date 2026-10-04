@@ -59,8 +59,8 @@ export default function Page() {
     <main className="portfolio-shell" id="top">
       <nav className="topbar page-width" aria-label="Main navigation">
         <a className="wordmark" href="#top" onClick={() => setMenuOpen(false)}><span>AK</span> DATA WITH AVINASH</a>
-        <button className="menu-button" aria-label={menuOpen ? 'Close menu' : 'Open menu'} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</button>
-        <div className={`nav-menu ${menuOpen ? 'open' : ''}`}>
+        <button type="button" className="menu-button" aria-label={menuOpen ? 'Close menu' : 'Open menu'} aria-expanded={menuOpen} aria-controls="main-nav-menu" onClick={() => setMenuOpen((open) => !open)}>{menuOpen ? <X /> : <Menu />}</button>
+        <div id="main-nav-menu" className={`nav-menu ${menuOpen ? 'open' : ''}`}>
           {['Work', 'About', 'Stack', 'Contact'].map((item) => <a key={item} href={`#${item.toLowerCase()}`} onClick={() => setMenuOpen(false)}>{item}</a>)}
           <a className="resume-link" href="/data/Avinash_Kamble_Resume-4-0b231e.docx" download><Download size={14} /> Resume</a>
         </div>
